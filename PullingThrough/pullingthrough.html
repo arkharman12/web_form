@@ -1,0 +1,243 @@
+<!----------
+TITLE: Pulling Through
+AUTHOR: Harmanjot Singh (HS)
+PURPOSE: Pulling Through Assignment
+ORIGINALLY CREATED ON: 10 April 2019
+LAST MODIFIED ON: 14 April 2019
+LAST MODIFIED BY: Harmanjot Singh (HS)
+MODIFICATION HISTORY:
+11 April 2019: User can get a freelancer or client account summary outputted at the end of the form (HS)
+14 April 2019: Added autofocus, autocomplete functionality and fixed type = email, password and tel (HS)
+---------->
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		
+	<title>Pulling Through</title>
+
+	<!--Google fonts Playfair and Open Sans-->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- My external CSS file -->
+    <link rel="stylesheet" type="text/css" href="pullingthrough.css">
+    <!-- jQuery important file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Theme's built in CSS and JS files -->
+    <link href="../Utilities/theme/jquery-ui.css" rel="stylesheet">
+    <script type="text/javascript" src="../Utilities/theme/jquery-ui.js"></script>
+
+</head>
+
+<body>
+    <div id="tabs">
+        <img class="center" src="../Images/singhcloud.png" alt="Singh Cloud logo">
+        <ul>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li><a href="#tabs-1">I Want to Work</a></li>
+            <li><a href="#tabs-2">I Want to Hire</a></li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+            <li>&#9734;</li>
+        </ul>
+        <div id="tabs-1">
+            <form>
+                <div class="accordion">
+                    <!--User contact info-->
+                    <h3>Contact Information</h3>
+                    <div class="text-bold">
+                        <!-- First name -->
+                        <label for="fname">First Name<span class="required">*</span></label><br>
+                        <input type="text" id="fname" name="fname" autofocus><br>
+                        
+                        <!-- Last name -->
+                        <label for="lname">Last Name<span class="required">*</span></label><br>
+                        <input type="text" id="lname" name="lname"><br>
+                        
+                        <!-- Create username -->
+                        <label for="username">Create Username<span class="required">*</span></label><br>
+                        <input type="text" id="username" name="username"><br>
+                        
+                        <!-- Create password -->
+                        <label for="password">Create Password<span class="required">*</span></label><br>
+                        <input type="password" id="password" name="password"><br>
+                        
+                        <!-- Address -->
+                        <label for="address">Address</label><br>
+                        <input type="text" id="address" name="address"><br>
+                        
+                        <!-- Country -->
+                        <label for="country">Country<span class="required">*</span></label><br>
+                        <input type="text" id="country" name="country" placeholder="search here"><br>
+                        
+                        <!-- Email-->
+                        <label for="email">Email </label><br>
+                        <input type="email" id="email" name="email"><br>
+                        
+                        <!-- Phone number-->
+                        <label for="phone">Phone<span class="required">*</span></label><br>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <!--Service info-->
+                    <h3>Tell us about your service</h3>
+                    <div>
+                        <!-- Service type -->
+                        <label for="service-offer" class="text-bold">What is the main service you offer to clients?<span class="required">*</span></label><br>
+                        <select id="service-offer">
+                            <option>Any service</option>
+                            <option>Web, mobile and Software Dev</option>
+                            <option>IT & Networking</option>
+                            <option>Data Science and Analytics</option>
+                            <option>Engineering & Architecture</option>
+                            <option>Design & Creative</option>
+                            <option>Customer Service</option>
+                            <option>Sales & Marketing</option>
+                            <option>Accounting & Consulting</option>
+                        </select> <br><br>
+                        
+                        <!-- Skills -->
+                        <label for="descriptionSkills" class="text-bold">What skills do you offer clients?<span class="required">*</span></label><br>
+                        <textarea id="descriptionSkills" name="descriptionSkills" rows="6" cols="50"></textarea><br>
+                        
+                        <!-- Experience level -->
+                        <p class="text-bold">What is your expereince level?</p>
+                        <label><input type="radio" name="radioName" value="beginner"/>Beginner<br /></label>
+                        <label><input type="radio" name="radioName" value="intermediate"/>Intermediate<br /></label>
+                        <label><input type="radio" name="radioName" value="expert"/>Expert<br /></label>
+                        <br><br>
+                        
+                        <!-- Professional job title -->
+                        <label for="descriptionJobTitle" class="text-bold">Add a professional title<span class="required">*</span></label><br>
+                        <textarea id="descriptionJobTitle" name="descriptionJobTitle" rows="1" cols="30" placeholder="e.g. front-end web developer"></textarea><br><br>
+                        
+                        <!-- Work experience -->
+                        <label for="spinner" class="text-bold">How many years of experience do you have?</label>
+                        <input id="spinner" name="value" value="1"><br><br>
+
+                        <!-- Professional job overview -->
+                        <label for="descriptionJobOverview" class="text-bold">Write a professional overview<span class="required">*</span></label><br>
+                        <textarea id="descriptionJobOverview" name="descriptionJobOverview" rows="6" cols="50"></textarea><br><br>
+                        
+                        <!-- Work availability -->
+                        <label for="datepicker" class="text-bold">When are you available for work?<span class="required">*</span></label><br>
+                        <input type="text" name="date" id="datepicker">
+                    </div>
+                </div><!--End accordion-->
+                <button type=submit id="btnSubmit" class="ui-button ui-widget ui-corner-all">Submit</button><button type=reset class="ui-button ui-widget ui-corner-all">Reset</button>
+            </form> <!-- End form 1-->
+            <br>
+            <div id="output"></div>
+        </div> <!-- End tab-1 -->
+
+
+        <!-- Second tab starts from here -->
+        <div id="tabs-2">
+            <form>
+                <div class="accordion">
+                    <!--User contact info-->
+                    <h3>Contact Information</h3>
+                    <div class="text-bold">
+                        <!-- Firts name -->
+                        <label for="fnameTwo">First Name<span class="required">*</span></label><br>
+                        <input type="text" id="fnameTwo" name="fnameTwo"><br>
+
+                        <!-- Last name -->
+                        <label for="lnameTwo">Last Name<span class="required">*</span></label><br>
+                        <input type="text" id="lnameTwo" name="lnameTwo"><br>
+
+                        <!-- Create username -->
+                        <label for="usernameTwo">Create Username<span class="required">*</span></label><br>
+                        <input type="text" id="usernameTwo" name="usernameTwo"><br>
+
+                        <!-- Create Password -->
+                        <label for="passwordTwo">Create Password<span class="required">*</span></label><br>
+                        <input type="password" id="passwordTwo" name="passwordTwo"><br>
+
+                        <!-- Address -->
+                        <label for="addressTwo">Address</label><br>
+                        <input type="text" id="addressTwo" name="addressTwo"><br>
+
+                        <!-- Country -->
+                        <label for="countryTwo">Country<span class="required">*</span></label><br>
+                        <input type="text" id="countryTwo" name="countryTwo" placeholder="search here"><br>
+
+                        <!-- Email -->
+                        <label for="emailTwo">Email </label><br>
+                        <input type="email" id="emailTwo" name="emailTwo"><br>
+
+                        <!-- Phone number -->
+                        <label for="phoneTwo">Phone<span class="required">*</span></label><br>
+                        <input type="tel" id="phoneTwo" name="phoneTwo">
+                    </div>
+
+                    <!--Service info-->
+                    <h3>Tell us what you need done</h3>
+                    <div>
+                        <!-- Name of the project -->
+                        <label for="descriptionProject" class="text-bold">Choose a name for your project<span class="required">*</span></label><br>
+                        <textarea id="descriptionProject" name="descriptionProject" rows="1" cols="50"
+                            placeholder="e.g. build me a website"></textarea><br><br>
+                        
+                        <!-- Tell us more about the project -->
+                        <label for="descriptionPMore" class="text-bold">Tell us more about your project<span class="required">*</span></label><br>
+                        <textarea id="descriptionPMore" name="descriptionPMore" rows="6" cols="50"></textarea><br><br>
+                        
+                        <!-- Required skills -->
+                        <p class="text-bold">What skills are required? (check all that apply): <span class="required">*</span></p>
+                        <label><input type="checkbox" name="skills" />Web Design <br /></label>
+                        <label><input type="checkbox" name="skills" />Logo Design <br /></label>
+                        <label><input type="checkbox" name="skills" />App Development <br /></label>
+                        <label><input type="checkbox" name="skills" />Software Testing <br /></label>
+                        <label><input type="checkbox" name="skills" />Data Entry <br /></label>
+                        <input name="other-Skill" id="other">
+                        <label for="other">Any other</label><br>
+                        
+                        
+                        <!-- How do you want to pay -->
+                        <p class="text-bold">How do you want to pay?<span class="required">*</span></p>
+                        <label><input type="radio" name="pay" />Pay fixed price</label>
+                        <label><input type="radio" name="pay" />Pay by the hour</label>
+                        <br><br>
+                        
+                        <!-- Work availability -->
+                        <label for="datepicker2" class="text-bold">When do you need your project done by?<span class="required">*</span></label><br>
+                        <input type="text" name="date" id="datepicker2">
+                    </div>
+                </div> <!--End accordion-->
+                <!-- Submit and Reset buttons -->
+                <button type=submit id="btnSubmit2" class="ui-button ui-widget ui-corner-all">Submit</button><button type=reset class="ui-button ui-widget ui-corner-all">Reset</button>
+            </form> <!-- End form 2-->
+            <br>
+            <div id="output2"></div>
+        </div> <!-- End tab-2 -->
+        <br>
+        <br>
+        <br>
+
+        <!-- Link to the Final Project Page -->
+        <a href="../finalproject.html" class="previous">Final Project Page</a>
+
+    </div> <!-- end div id="tabs" -->
+    
+    <!-- Noth sure why this is here -->
+    <script src="../Utilities/theme/jquery-ui.min.js"></script>
+    <!-- My external JS file -->
+	<script src="pullingthrough.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+/**********
+TITLE: Pulling Through
+AUTHOR: Harmanjot Singh (HS)
+PURPOSE: To style the pullingthrough.html
+ORIGINALLY CREATED ON: 10 April 2019
+LAST MODIFIED ON: 10 April 2019
+LAST MODIFIED BY: Harmanjot Singh (HS)
+MODIFICATION HISTORY: Original Build
+**********/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+	color: #3d3d3f;
+	font-size: 16px;
+    background-image: url("bluegreen.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+	max-width: 100%;
+  	height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Logo Center  */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+span.required {
+	color: red;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+#tabs {			/* Define the formatting for the <div id="form"> box */
+	width: 720px;
+	margin: 10px auto;
+	min-height: 375px;
+	background-color: #f6f5f3;
+	padding: 25px;
+}
+
+.previous {
+    background-color: lightcoral;
+    color: black;
+}
+
