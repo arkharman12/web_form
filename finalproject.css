@@ -1,0 +1,72 @@
+/**********
+TITLE: Final Project Page
+AUTHOR: Harmanjot Singh (HS)
+PURPOSE: To style the finalproject.html
+ORIGINALLY CREATED ON: 5 April 2019
+LAST MODIFIED ON: 5 April 2019
+LAST MODIFIED BY: Harmanjot Singh (HS)
+MODIFICATION HISTORY: Original Build
+**********/
+
+*{
+	margin: 0 0 6px;
+}
+header{
+	text-align:left;
+	color:white;
+	background-color: #262626;
+	padding:30px 150px;
+}
+body {
+	background-image: url("Images/webcode1.jpg");	
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+	max-width: 100%;
+  	height: auto;
+} 
+body p {
+	padding-left: 2em;
+}
+li, li a{						/* Define the formatting for the links to the labs */
+	list-style: none;
+	background-color: #262626;
+	text-align: center;
+	color: white;
+	border-radius: 3px;
+	padding: 2px;
+}
+h2{
+	width: 100%;
+	color: #262626;
+	line-height: 40px;
+}
+h3{
+	color: #262626;
+	line-height: 30px;
+	text-align: center;
+}
+#assignments{			/* Define the formatting for the <div id="asssignments"> box */
+	width: 720px;
+	margin: 0 auto;
+	margin-top: 50px;
+	box-shadow: 0 2px 15px #EEE;
+	min-height: 300px;
+	padding: 15px 20px 25px 20px;
+	border-radius: 10px;
+	background-color: white;
+}
+#assignments ul {
+	float:left;
+	width: 300px;
+}
+hr{						
+	margin: 10px 0;
+	width: 100%;
+	float: left;
+}
+.previous {
+    background-color: rgb(253, 101, 101);
+    color: black;
+}
