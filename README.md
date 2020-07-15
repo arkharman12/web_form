@@ -1,5 +1,5 @@
 # Web Form
-Two-way web form for user sign up needs
+Two-way web HTML, CSS & JS form for user sign up needs
 
 ## Features:
 Professional appearance <br>
